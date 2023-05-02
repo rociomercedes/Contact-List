@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact List</title>
+</head>
+<body>
+    <header>
+        <h1>Contact List
+            <img src="https://img.icons8.com/stickers/100/null/contacts.png"/>
+        </h1>
+    </header>
+
+    <main class="container">
+
+        <!-- Agregar contactos -->
+        <div class="add-container">
+            <label for="name"> Nuevo Contacto</label>
+            <div class="addInputs">
+                <input type="text" id="name" placeholder="Nombre" required/>
+                <input type="text" id="number" placeholder="Numero" maxlength="10" required/>
+            </div>
+            <button type="submit" id="addContact" onclick="addContact()">
+            Agregar
+            </button>
+
+            <p id="displayNoti"></p>
+        </div>
+
+
+        <!-- Consultar Contactos  -->
+        <div class="get-container">
+            <label for="getContact"> Buscar Contacto</label>
+            <div class="getInputs">
+                <input type="text" id="getContactName" placeholder="Nombre" required/>
+                <button type="submit" id="getContact" onclick="getContact()"> Detalles
+                </button>
+
+            </div>
+            <p id="displayContact"></p>
+
+            <div class="reset" onclick="reset()">Agregar Nuevo Contacto</div>
+
+
+        </div>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
